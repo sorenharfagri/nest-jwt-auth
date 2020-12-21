@@ -1,5 +1,5 @@
 import { BaseEntity, Column, Entity, ObjectIdColumn } from "typeorm";
-import * as bcrypt from 'bcrypt'
+import * as bcrypt from 'bcryptjs'
 
 /* 
    @password: Хешированый с помощью bcrypt-а пароль
