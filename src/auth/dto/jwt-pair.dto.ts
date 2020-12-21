@@ -8,7 +8,7 @@ export class JwtPairDto {
 
     @IsNotEmpty()
     @IsString()
-    @Matches(/^\$2b\$10\$/, {message: 'Incorrect header of Refresh Token'})
+    @Matches(/^\$2[ab]\$10\$/, {message: 'Incorrect header of Refresh Token'})
     @MinLength(29)
     @MaxLength(29)
     refreshToken: string
